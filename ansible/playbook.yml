@@ -1,1 +1,13 @@
+- name: Run script on node1
+  hosts: node
+  become: yes
 
+  tasks:
+    - name: Copy script to node1
+      copy:
+        src: script.sh
+        dest: /tmp/script.sh
+        mode: '0755'
+
+    - name: Execute script
+      command: /tmp/script.sh
