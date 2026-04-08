@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello Kaustubhh from Node1 $(date)" > /tmp/output.txt
+echo "Hello Kaustubh from Node1 $(date)" > /tmp/output.txt
